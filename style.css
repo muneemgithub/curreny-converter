@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-family: "Oswald", sans-serif;
+}
+
+body{
+    /* background-image: url(./img/bg-img.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 700px;
+}
+
+.wrapper {
+    width: 25%;
+    max-width: 25rem;
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 2rem;
+    border-radius: 0.8em;
+
+}
+
+.app-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-icon {
+    width: 9.37em;
+}
+
+h1, label {
+    color: #fff;
+}
+
+.app-title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+input#amount {
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #2a2a2a;
+    color: #7a789d;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+input#amount:focus {
+    color: black;
+    border-color: black;
+}
+
+.dropdowns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 0.2em;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 20px 20px;
+    color: #fff;
+    background-color: #9873fe;
+}
+
+select option {
+    background-color: #fff;
+    color: #000;
+}
+
+button {
+    font-size: 1em;
+    width: 100%;
+    background-color: #7a789d;
+    margin-top: 2em;
+    padding: 1em 0;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1em;
+    background-color: #e5dbff;
+    padding: 0.8em 0;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+}
